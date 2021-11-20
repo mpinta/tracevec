@@ -1,0 +1,9 @@
+numpy
+scipy
+torch
+pandas
+seaborn
+matplotlib
+scikit_learn
+gensim==3.8.3
+matplotlib_venn==0.11.6
