@@ -18,18 +18,20 @@ $ python setup.py install
 
 ## Usage
 The project consists of five connecting parts, which are:
-1. Training word embedding models
-2. Clustering
-3. Classification
-4. Prediction
-5. RNN Forecasting
+1. **Training word embedding models** (_using [Gensim](https://radimrehurek.com/gensim/) topic modelling library_)
+2. **Clustering** (_Doc2Vec vectors into clusters_)
+3. **Classification** (_of the electrical device type using Doc2Vec vectors_)
+4. **Prediction** (_of the next electricity consumption category using Word2Vec vectors_)
+5. **RNN Forecasting** (_the next electricity consumption category using RNN with GRU_)
 
-Prepare your Pip or Anaconda environment and make sure you have all of the above dependencies installed. Then run the `tracevec.ipynb` notebook file, which stores and describes all the results of our training and model analysis. You can also restart or modify the code yourself, as it is fully equipped with the descriptive comments. Our `Word2Vec` and `Doc2Vec` models have also been added to the `models` directory, so you can skip model training part if you don't want to create new ones.
+First, prepare your Pip or Anaconda environment and make sure you have all of the above dependencies installed. Then open the `tracevec.ipynb` notebook file, which stores and describes all the results of our training and model analysis. You can also run and modify the code yourself, as it is fully equipped with the descriptive comments. You can find our `Word2Vec` and `Doc2Vec` models in the `models` directory (_skip the model part training if you don’t want to create new ones_).
 
-## Datasets
-All data sets required to run the code are included in the repository. If you are running code without the included data sets, it is only necessary to clone the [tracebase repository](https://github.com/areinhardt/tracebase), which represents projects main data set, into the `datasets` directory. All the other modified data sets (`consumptions`, `samples`, `forecast-train` and `forecast-test`) are gradually created by the notebook code itself.
-
-The **tracebase** data set is not our property and is used only as a depencency. For easier access to the data, its repository is also added as a submodule. We appreciate the work done by the authors.
+### Datasets
+All data sets required to run the code are included in the repository. If you are running code without the included data sets, it is only necessary to clone the [tracebase](https://github.com/areinhardt/tracebase) repository, which represents projects main data set, into the `datasets` directory. All the other modified data sets (_consumptions, samples, forecast-train and forecast-test_) are gradually created by the notebook code itself. The **tracebase** data set is not our property and is used only as a depencency (_submodule_) - we appreciate the work done by the authors. Make sure to initialize the submodule with:
+```
+$ git submodule init
+$ git submodule update
+```
 
 #### Acknowledgements
 _Contains information from the tracebase data set, which is made available at  [http://www.tracebase.org](http://www.tracebase.org/)  under the Open Database License (ODbL)._
