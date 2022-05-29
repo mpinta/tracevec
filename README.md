@@ -33,5 +33,13 @@ $ git submodule init
 $ git submodule update
 ```
 
+## Publications
+The code was originally used in the following publications:
+```
+Pintarič Matic, (2022).
+S strojnim učenjem podprta analiza vzorcev vektorizirane porabe električne energije.
+Maribor: University of Maribor, Faculty of Electrical Engineering and Computer Science.
+```
+
 #### Acknowledgements
 _Contains information from the tracebase data set, which is made available at  [http://www.tracebase.org](http://www.tracebase.org/)  under the Open Database License (ODbL)._
